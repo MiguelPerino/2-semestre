@@ -1,9 +1,3 @@
-'''Crie uma função mover_zeros_fim(lista) que receba uma lista de 12 números
-inteiros e retorne uma nova lista em que todos os zeros sejam movidos para
-o final, preservando a ordem relativa dos demais elementos e mantendo o
-tamanho da lista original.
-No programa principal, leia 12 números inteiros, armazene-os em uma lista,
-chame a função e exiba o resultado.'''
 
 def mover_zeros(lista):
     lista_1 = []
