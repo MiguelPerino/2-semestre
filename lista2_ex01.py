@@ -12,6 +12,8 @@ def quantos_maiores(lista, limite):
         if valor > limite:
             soma += 1
             lista_maior.append(valor)
+    if len(lista_maior) == 0:
+        return ['A lista está vazia', soma]
     return [lista_maior, soma]
 
 
@@ -29,4 +31,4 @@ limitante = int(input('\nInforme o valor limitante: '))
 
 qntd = quantos_maiores(lista, limitante)
 print(lista)
-print(f'A lista com os números maiores que o limitante: {qntd[0]} e a quantidade: {qntd[1]}')
+print(f'A lista com os números maiores que o limitante: {qntd[0]} e a quantidade é: {qntd[1]}')
