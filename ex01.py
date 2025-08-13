@@ -5,7 +5,7 @@
 
 try:
     lista = []
-    for i in range(8):
+    for i in range(12):
         num = int(input(f'Informe o {i + 1}° núm: '))
         lista.append(num)
 
