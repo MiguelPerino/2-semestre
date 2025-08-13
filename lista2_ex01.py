@@ -1,10 +1,3 @@
-'''Crie uma função quantos_maiores(lista, limite) que receba uma lista de
-números e um valor limite, e retorne quantos números da lista são maiores
-que esse limite.
-No programa principal, leia 8 números, armazene-os em uma lista, depois
-leia o valor limite, chame a função e exiba o resultado. '''
-
-
 def quantos_maiores(lista, limite):
     soma = 0
     lista_maior =[]
