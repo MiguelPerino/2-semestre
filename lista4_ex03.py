@@ -27,11 +27,11 @@ for valor in funcionarios:
     print(f'Nome: {valor['nome']}, Cargo: {valor['cargo']}, Salário: R${valor['salario']:.2f}')
     
 
-atualizar = input('\nDeseja atualizar o salário de algum funcionário? ').lower()
+atualizar = input('\nDeseja atualizar o salário de algum funcionário(s/n)? ').lower()
 print()
 
 if atualizar == 'sim' or atualizar == 's':
-    funcionario_atualizado = input('Qual funcionário(s/n)? ').lower()
+    funcionario_atualizado = input('Qual funcionário? ').lower()
       
     encontrado = False
     for dicionario_individual in funcionarios:
@@ -39,7 +39,7 @@ if atualizar == 'sim' or atualizar == 's':
             salario_novo = float(input(f'\nInforme o novo salário de {funcionario_atualizado}: '))
             dicionario_individual['salario'] = salario_novo
             encontrado = True
-            print(f'Sálario de {dicionario_individual['nome']} atualizado para {salario_novo:.2f}!')
+            print(f'Sálario de {dicionario_individual['nome']} atualizado para R${salario_novo:.2f}!')
             break
     if not encontrado:
         print('funcionário não encontrado')
@@ -47,7 +47,7 @@ if atualizar == 'sim' or atualizar == 's':
 print()
 print('Lista final de funcionários: ')
 for func in funcionarios:
-    print(f'Nome: {func['nome']}, Cargo: {func['cargo']}, Salário: {func['salario']:.2f}')
+    print(f'Nome: {func['nome']}, Cargo: {func['cargo']}, Salário: R${func['salario']:.2f}')
 
 
 
